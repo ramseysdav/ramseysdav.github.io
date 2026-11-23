@@ -1,0 +1,1220 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>女大学生沙龙室 - 官方影像门户 | 青春对话与成长记录</title>
+<meta name="description" content="女大学生沙龙室官方网站，聚焦女大学生沙龙室的原创高清影像内容，汇聚创作者访谈、校园生活记录与深度对话，打造值得信赖的青春内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c2568e'/%3E%3Cpath d='M24 18 L48 32 L24 46 Z' fill='%23fff5f9'/%3E%3C/svg%3E">
+<style>
+:root{
+  --slm-pink:#c2568e;
+  --slm-pink-soft:#f6dfe9;
+  --slm-lilac:#8a72b8;
+  --slm-lilac-soft:#eae4f6;
+  --slm-ink:#2c2533;
+  --slm-gray:#6f6677;
+  --slm-bg:#fbf8fa;
+  --slm-white:#ffffff;
+  --slm-line:#e8dfe6;
+  --slm-radius:18px;
+  --slm-shadow:0 12px 34px rgba(120,80,110,.13);
+  --slm-header-h:118px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--slm-bg);
+  color:var(--slm-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+ul{list-style:none;}
+.slm-wrap{width:min(1180px,92%);margin:0 auto;}
+.slm-sticky-head{position:sticky;top:0;z-index:80;}
+.slm-announce{
+  background:linear-gradient(90deg,#8a72b8,#c2568e 55%,#e07aa8);
+  color:#fff;font-size:13.5px;letter-spacing:.2px;
+}
+.slm-announce .slm-wrap{
+  display:flex;align-items:center;gap:12px;padding:9px 0;overflow:hidden;
+}
+.slm-announce-tag{
+  flex:0 0 auto;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.45);
+  border-radius:999px;padding:1px 10px;font-size:12px;font-weight:600;
+}
+.slm-announce-track{display:flex;gap:34px;min-width:0;overflow:hidden;}
+.slm-announce-track span{white-space:nowrap;opacity:.95;}
+.slm-announce-track span::before{content:"◆";font-size:9px;margin-right:7px;opacity:.8;}
+.slm-header{
+  background:rgba(251,248,250,.94);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--slm-line);
+  box-shadow:0 4px 18px rgba(120,80,110,.06);
+}
+.slm-header-inner{
+  display:flex;align-items:center;gap:26px;padding:14px 0;
+}
+.slm-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto;}
+.slm-brand-mark{
+  width:42px;height:42px;border-radius:13px;flex:0 0 auto;
+  background:linear-gradient(140deg,var(--slm-pink),var(--slm-lilac));
+  display:grid;place-items:center;color:#fff;font-weight:800;font-size:17px;letter-spacing:-1px;
+  box-shadow:0 6px 16px rgba(194,86,142,.32);
+}
+.slm-brand-text b{display:block;font-size:17.5px;letter-spacing:.4px;line-height:1.25;}
+.slm-brand-text small{display:block;font-size:11px;color:var(--slm-gray);letter-spacing:1.4px;}
+.slm-nav{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap;}
+.slm-nav a{
+  font-size:14.5px;padding:7px 12px;border-radius:9px;color:#4d4554;transition:.2s;white-space:nowrap;
+}
+.slm-nav a:hover{background:var(--slm-pink-soft);color:var(--slm-pink);}
+.slm-head-tools{margin-left:auto;display:flex;align-items:center;gap:10px;}
+.slm-search{
+  display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--slm-line);
+  border-radius:999px;padding:6px 8px 6px 14px;width:230px;transition:.22s;
+}
+.slm-search:focus-within{border-color:var(--slm-pink);box-shadow:0 0 0 3px rgba(194,86,142,.13);}
+.slm-search input{border:none;outline:none;font-size:13.5px;width:100%;background:transparent;color:var(--slm-ink);}
+.slm-search button{
+  background:linear-gradient(135deg,var(--slm-pink),var(--slm-lilac));color:#fff;
+  border-radius:50%;width:26px;height:26px;flex:0 0 auto;display:grid;place-items:center;font-size:13px;
+}
+.slm-btn{
+  display:inline-flex;align-items:center;gap:7px;border-radius:999px;font-size:14px;
+  padding:9px 20px;font-weight:600;transition:.22s;border:1px solid transparent;white-space:nowrap;
+}
+.slm-btn-primary{background:linear-gradient(135deg,var(--slm-pink),var(--slm-lilac));color:#fff;box-shadow:0 8px 20px rgba(138,114,184,.32);}
+.slm-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(138,114,184,.42);}
+.slm-btn-ghost{background:#fff;border-color:var(--slm-line);color:#49414f;}
+.slm-btn-ghost:hover{border-color:var(--slm-pink);color:var(--slm-pink);}
+.slm-burger{display:none;width:40px;height:40px;border-radius:11px;border:1px solid var(--slm-line);background:#fff;place-items:center;}
+.slm-burger span{display:block;width:18px;height:2px;background:#4d4554;margin:3.5px auto;border-radius:2px;transition:.25s;}
+.slm-mobile-nav{display:none;background:#fff;border-bottom:1px solid var(--slm-line);}
+.slm-mobile-nav.open{display:block;}
+.slm-mobile-nav a{display:block;padding:12px 4%;font-size:15px;border-bottom:1px dashed var(--slm-line);}
+.slm-search-hint{
+  display:none;font-size:12.5px;color:var(--slm-pink);background:var(--slm-pink-soft);
+  padding:6px 14px;border-radius:9px;margin-top:8px;
+}
+.slm-search-hint.show{display:block;}
+
+section[id]{scroll-margin-top:calc(var(--slm-header-h) + 14px);}
+
+/* HERO */
+.slm-hero{padding:52px 0 20px;}
+.slm-hero-grid{
+  display:grid;grid-template-columns:5fr 5fr;gap:46px;align-items:center;
+}
+.slm-hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:1.2px;
+  color:var(--slm-pink);background:var(--slm-pink-soft);padding:5px 14px;border-radius:999px;
+}
+.slm-hero h1{
+  font-size:clamp(30px,4.4vw,50px);line-height:1.15;margin:18px 0 8px;letter-spacing:-.5px;
+}
+.slm-hero h1 em{font-style:normal;background:linear-gradient(120deg,var(--slm-pink),var(--slm-lilac));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.slm-hero-sub{font-size:15px;color:var(--slm-gray);max-width:520px;}
+.slm-hero-intro{
+  margin-top:18px;font-size:14.5px;color:#534a5c;background:#fff;border:1px solid var(--slm-line);
+  border-left:4px solid var(--slm-lilac);border-radius:12px;padding:14px 18px;
+}
+.slm-hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 0;}
+.slm-hero-stat{background:#fff;border:1px solid var(--slm-line);border-radius:14px;padding:12px 14px;}
+.slm-hero-stat b{display:block;font-size:23px;font-weight:800;color:var(--slm-pink);line-height:1.2;}
+.slm-hero-stat span{font-size:12.5px;color:var(--slm-gray);}
+.slm-hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+.slm-hero-visual{position:relative;}
+.slm-hero-frame{
+  border-radius:26px;overflow:hidden;box-shadow:var(--slm-shadow);background:#fff;border:1px solid var(--slm-line);
+}
+.slm-hero-frame svg{width:100%;height:auto;aspect-ratio:16/12;}
+.slm-hero-badge{
+  position:absolute;left:-14px;bottom:22px;background:#fff;border-radius:14px;padding:11px 16px;
+  box-shadow:var(--slm-shadow);display:flex;align-items:center;gap:10px;border:1px solid var(--slm-line);
+}
+.slm-hero-badge .slm-live-dot{width:9px;height:9px;border-radius:50%;background:#e0537f;box-shadow:0 0 0 4px rgba(224,83,127,.18);}
+.slm-hero-badge b{font-size:13.5px;}
+.slm-hero-badge small{display:block;font-size:11.5px;color:var(--slm-gray);}
+
+/* SECTIONS */
+.slm-section{padding:54px 0;}
+.slm-section[data-tone="lilac"]{background:linear-gradient(180deg,#f4f0fb,#fbf8fa);}
+.slm-section[data-tone="pink"]{background:linear-gradient(180deg,#fdf3f7,#fbf8fa);}
+.slm-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:28px;flex-wrap:wrap;}
+.slm-eyebrow{font-size:12.5px;font-weight:700;letter-spacing:2px;color:var(--slm-lilac);}
+.slm-section-head h2{font-size:clamp(22px,2.9vw,31px);line-height:1.25;letter-spacing:-.3px;margin-top:4px;}
+.slm-section-head p{font-size:14px;color:var(--slm-gray);max-width:520px;margin-top:6px;}
+.slm-link-more{font-size:13.5px;color:var(--slm-pink);font-weight:600;border-bottom:1px dashed var(--slm-pink);padding-bottom:1px;}
+
+/* focus + video list */
+.slm-focus-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:26px;align-items:start;}
+.slm-focus-card{
+  background:#fff;border:1px solid var(--slm-line);border-radius:var(--slm-radius);overflow:hidden;
+  box-shadow:var(--slm-shadow);transition:.25s;
+}
+.slm-focus-card:hover{transform:translateY(-4px);}
+.slm-focus-card svg{width:100%;aspect-ratio:16/9;height:auto;}
+.slm-focus-body{padding:18px 20px 20px;}
+.slm-tagrow{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px;}
+.slm-tag{font-size:11.5px;padding:2px 10px;border-radius:999px;background:var(--slm-lilac-soft);color:#6b54a0;font-weight:600;}
+.slm-tag.pink{background:var(--slm-pink-soft);color:var(--slm-pink);}
+.slm-focus-body h3{font-size:20px;line-height:1.35;margin-bottom:6px;}
+.slm-focus-body p{font-size:13.5px;color:var(--slm-gray);}
+.slm-meta{display:flex;align-items:center;gap:12px;font-size:12.5px;color:var(--slm-gray);margin-top:12px;flex-wrap:wrap;}
+.slm-meta b{color:#49414f;font-weight:600;}
+.slm-video-list{display:flex;flex-direction:column;gap:14px;}
+.slm-video-item{
+  background:#fff;border:1px solid var(--slm-line);border-radius:15px;padding:15px 17px;transition:.22s;
+}
+.slm-video-item:hover{box-shadow:0 8px 22px rgba(120,80,110,.12);border-color:#dfc9dc;transform:translateX(3px);}
+.slm-video-item-top{display:flex;gap:12px;align-items:flex-start;}
+.slm-video-index{
+  flex:0 0 auto;width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--slm-pink),var(--slm-lilac));
+  color:#fff;font-size:12.5px;font-weight:700;display:grid;place-items:center;
+}
+.slm-video-item h3{font-size:15.5px;line-height:1.4;}
+.slm-video-item p{font-size:13px;color:var(--slm-gray);margin-top:4px;}
+.slm-video-ops{display:flex;gap:9px;margin-top:11px;flex-wrap:wrap;}
+.slm-mini-btn{
+  font-size:12.5px;padding:4px 12px;border-radius:999px;border:1px solid var(--slm-line);background:#fff;
+  color:#5a5163;display:inline-flex;align-items:center;gap:5px;transition:.2s;
+}
+.slm-mini-btn:hover{border-color:var(--slm-pink);color:var(--slm-pink);}
+.slm-mini-btn.active{background:var(--slm-pink-soft);border-color:var(--slm-pink);color:var(--slm-pink);}
+.slm-mini-btn.saved{color:var(--slm-lilac);border-color:var(--slm-lilac);background:var(--slm-lilac-soft);}
+
+/* cards grid */
+.slm-grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+.slm-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}
+.slm-card{
+  background:#fff;border:1px solid var(--slm-line);border-radius:var(--slm-radius);overflow:hidden;
+  transition:.25s;display:flex;flex-direction:column;min-width:0;
+}
+.slm-card:hover{transform:translateY(-4px);box-shadow:var(--slm-shadow);}
+.slm-card svg{width:100%;aspect-ratio:16/9;height:auto;}
+.slm-card-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.slm-card-body h3{font-size:16.5px;line-height:1.4;}
+.slm-card-body p{font-size:13px;color:var(--slm-gray);}
+.slm-card-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--slm-gray);padding-top:8px;}
+
+/* topic / special */
+.slm-special{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;
+}
+.slm-special-card{
+  background:#fff;border:1px solid var(--slm-line);border-radius:var(--slm-radius);padding:20px 22px;transition:.25s;
+}
+.slm-special-card:hover{box-shadow:var(--slm-shadow);}
+.slm-special-card h3{font-size:17.5px;margin-bottom:4px;}
+.slm-special-card .slm-status{font-size:11.5px;font-weight:700;color:var(--slm-pink);background:var(--slm-pink-soft);padding:2px 9px;border-radius:999px;display:inline-block;margin-bottom:8px;}
+.slm-special-card p{font-size:13px;color:var(--slm-gray);margin-bottom:10px;}
+.slm-special-card li{font-size:13.5px;padding:6px 0 6px 18px;position:relative;border-top:1px dashed var(--slm-line);color:#4b4354;}
+.slm-special-card li:first-child{border-top:none;}
+.slm-special-card li::before{content:"▸";position:absolute;left:0;color:var(--slm-lilac);}
+
+/* authors */
+.slm-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+.slm-author-card{
+  display:flex;gap:16px;background:#fff;border:1px solid var(--slm-line);border-radius:16px;padding:17px 18px;transition:.25s;
+}
+.slm-author-card:hover{box-shadow:var(--slm-shadow);border-color:#e2cde0;}
+.slm-avatar{
+  width:58px;height:58px;border-radius:16px;flex:0 0 auto;display:grid;place-items:center;
+  font-size:21px;font-weight:800;color:#fff;letter-spacing:-1px;
+}
+.slm-author-info{min-width:0;}
+.slm-author-info h3{font-size:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.slm-author-info h3 small{font-size:11.5px;font-weight:600;color:var(--slm-lilac);background:var(--slm-lilac-soft);padding:1px 8px;border-radius:999px;}
+.slm-author-info .slm-author-domain{font-size:12.5px;color:var(--slm-pink);font-weight:600;margin-top:2px;}
+.slm-author-info p{font-size:12.5px;color:var(--slm-gray);margin-top:6px;line-height:1.65;}
+.slm-author-stats{display:flex;gap:14px;font-size:12px;color:var(--slm-gray);margin-top:8px;}
+.slm-author-stats b{color:#49414f;}
+.slm-author-more{font-size:12.5px;color:var(--slm-lilac);font-weight:600;margin-top:8px;display:inline-block;}
+
+/* editorial long */
+.slm-prose{background:#fff;border:1px solid var(--slm-line);border-radius:var(--slm-radius);padding:32px 34px;box-shadow:0 6px 22px rgba(120,80,110,.06);}
+.slm-prose h3{font-size:18.5px;margin:22px 0 8px;padding-left:12px;border-left:4px solid var(--slm-pink);line-height:1.4;}
+.slm-prose h3:first-child{margin-top:0;}
+.slm-prose p{font-size:14.5px;color:#4b4354;margin-bottom:12px;text-align:justify;}
+.slm-prose strong{color:var(--slm-pink);font-weight:700;}
+.slm-prose ul{margin:8px 0 14px;padding-left:4px;}
+.slm-prose li{font-size:14px;color:#4b4354;padding:4px 0 4px 18px;position:relative;}
+.slm-prose li::before{content:"●";position:absolute;left:0;color:var(--slm-lilac);font-size:9px;top:11px;}
+.slm-pull{
+  border-left:4px solid var(--slm-lilac);background:var(--slm-lilac-soft);border-radius:0 12px 12px 0;
+  padding:14px 18px;font-size:14px;color:#5b4d75;margin:16px 0;
+}
+
+/* reviews */
+.slm-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.slm-review{
+  background:#fff;border:1px solid var(--slm-line);border-radius:15px;padding:16px 18px;
+}
+.slm-review-top{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+.slm-review-avatar{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-size:13px;font-weight:800;color:#fff;}
+.slm-review-top b{font-size:13.5px;}
+.slm-review-top span{font-size:11.5px;color:var(--slm-gray);display:block;}
+.slm-review p{font-size:13.5px;color:#4b4354;}
+.slm-stars{color:#e093b5;font-size:12px;letter-spacing:2px;margin-top:8px;}
+
+/* FAQ */
+.slm-faq{display:flex;flex-direction:column;gap:10px;}
+.slm-faq details{
+  background:#fff;border:1px solid var(--slm-line);border-radius:13px;padding:14px 18px;transition:.2s;
+}
+.slm-faq details[open]{border-color:var(--slm-pink);box-shadow:0 6px 18px rgba(194,86,142,.1);}
+.slm-faq summary{
+  font-size:14.5px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:14px;
+}
+.slm-faq summary::-webkit-details-marker{display:none;}
+.slm-faq summary::after{content:"+";color:var(--slm-pink);font-size:18px;line-height:1;font-weight:700;}
+.slm-faq details[open] summary::after{content:"−";}
+.slm-faq p{font-size:13.5px;color:var(--slm-gray);margin-top:10px;line-height:1.75;}
+
+/* timeline-ish dynamic */
+.slm-dyn{display:flex;flex-direction:column;gap:0;}
+.slm-dyn-item{display:flex;gap:16px;padding:16px 0;border-bottom:1px dashed var(--slm-line);}
+.slm-dyn-item:last-child{border-bottom:none;}
+.slm-dyn-date{flex:0 0 auto;font-size:12.5px;font-weight:700;color:var(--slm-lilac);width:88px;}
+.slm-dyn-body h3{font-size:15px;}
+.slm-dyn-body p{font-size:13px;color:var(--slm-gray);margin-top:2px;}
+
+/* partners */
+.slm-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;}
+.slm-partner{
+  background:#fff;border:1px solid var(--slm-line);border-radius:13px;padding:16px 14px;text-align:center;transition:.22s;
+}
+.slm-partner:hover{transform:translateY(-3px);border-color:#e2cde0;}
+.slm-partner b{display:block;font-size:14px;}
+.slm-partner span{font-size:11.5px;color:var(--slm-gray);}
+
+/* CTA strip */
+.slm-cta{
+  background:linear-gradient(120deg,#2c2533,#4a3a58 55%,#7a5288);
+  color:#fff;border-radius:24px;padding:38px 40px;display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap;
+}
+.slm-cta h2{font-size:23px;letter-spacing:-.3px;}
+.slm-cta p{font-size:13.5px;color:#d9cde2;margin-top:6px;max-width:540px;}
+
+/* footer */
+.slm-footer{background:#241d2b;color:#c9bfd2;padding:52px 0 26px;margin-top:20px;}
+.slm-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;}
+.slm-footer h3{color:#fff;font-size:14.5px;margin-bottom:12px;letter-spacing:.4px;}
+.slm-footer p{font-size:13px;line-height:1.8;}
+.slm-footer li{font-size:13px;padding:4px 0;}
+.slm-footer a:hover{color:#f0a9c9;}
+.slm-footer-brand{display:flex;align-items:center;gap:11px;margin-bottom:12px;}
+.slm-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.12);margin-top:34px;padding-top:18px;
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;color:#9a8fa6;
+}
+
+/* toast & modal */
+.slm-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);opacity:0;pointer-events:none;
+  background:#2c2533;color:#fff;font-size:13.5px;padding:11px 22px;border-radius:999px;z-index:200;
+  transition:.3s;box-shadow:0 12px 30px rgba(0,0,0,.28);max-width:90vw;text-align:center;
+}
+.slm-toast.show{opacity:1;transform:translate(-50%,0);}
+.slm-modal{
+  position:fixed;inset:0;background:rgba(35,25,42,.55);backdrop-filter:blur(3px);
+  display:none;place-items:center;z-index:180;padding:20px;
+}
+.slm-modal.open{display:grid;}
+.slm-modal-box{
+  background:#fff;border-radius:20px;max-width:520px;width:100%;padding:26px 26px 22px;position:relative;
+  max-height:86vh;overflow:auto;box-shadow:0 24px 60px rgba(0,0,0,.3);
+}
+.slm-modal-box h3{font-size:19px;margin-bottom:8px;}
+.slm-modal-box p{font-size:13.5px;color:var(--slm-gray);}
+.slm-modal-close{
+  position:absolute;right:14px;top:12px;width:32px;height:32px;border-radius:50%;background:#f2ecf0;
+  display:grid;place-items:center;font-size:16px;color:#6f6677;
+}
+.slm-modal-close:hover{background:var(--slm-pink-soft);color:var(--slm-pink);}
+.slm-field{margin-top:14px;}
+.slm-field label{font-size:12.5px;font-weight:600;color:#49414f;display:block;margin-bottom:5px;}
+.slm-field input,.slm-field textarea{
+  width:100%;border:1px solid var(--slm-line);border-radius:11px;padding:10px 13px;font-size:13.5px;
+  font-family:inherit;outline:none;transition:.2s;background:#fdfbfc;color:var(--slm-ink);
+}
+.slm-field input:focus,.slm-field textarea:focus{border-color:var(--slm-pink);box-shadow:0 0 0 3px rgba(194,86,142,.12);}
+.slm-field textarea{min-height:88px;resize:vertical;}
+.slm-modal-actions{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap;}
+
+/* back to top */
+.slm-totop{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--slm-pink),var(--slm-lilac));color:#fff;display:grid;place-items:center;
+  font-size:17px;box-shadow:0 10px 24px rgba(138,114,184,.4);opacity:0;pointer-events:none;transition:.3s;z-index:120;
+}
+.slm-totop.show{opacity:1;pointer-events:auto;}
+.slm-totop:hover{transform:translateY(-3px);}
+
+.slm-reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease;}
+.slm-reveal.in{opacity:1;transform:none;}
+
+@media(max-width:1000px){
+  .slm-hero-grid{grid-template-columns:1fr;gap:30px;}
+  .slm-focus-grid{grid-template-columns:1fr;}
+  .slm-grid-3{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .slm-partners{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .slm-footer-grid{grid-template-columns:1fr 1fr;}
+  .slm-nav{display:none;}
+  .slm-burger{display:grid;}
+  .slm-search{width:170px;}
+}
+@media(max-width:720px){
+  :root{--slm-header-h:150px;}
+  .slm-hero-stats{grid-template-columns:1fr 1fr;}
+  .slm-grid-3,.slm-grid-2,.slm-special,.slm-author-grid,.slm-review-grid{grid-template-columns:1fr;}
+  .slm-head-tools .slm-search{display:none;}
+  .slm-header-inner{gap:12px;}
+  .slm-prose{padding:22px 20px;}
+  .slm-cta{padding:26px 22px;}
+  .slm-footer-grid{grid-template-columns:1fr;}
+  .slm-announce-track{font-size:12px;}
+  .slm-announce-track span:nth-child(n+2){display:none;}
+  .slm-hero-badge{left:8px;bottom:10px;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="slm-sticky-head">
+  <div class="slm-announce">
+    <div class="slm-wrap">
+      <span class="slm-announce-tag">官方发布</span>
+      <div class="slm-announce-track">
+        <span>《女大学生沙龙室》第十季第 8 期「期末前夜的六人谈」高清正片已上线</span>
+        <span>「校园创作者扶持企划」第二期报名通道开启，11 月 30 日截止</span>
+        <span>沙龙室开放麦现场影像合集更新，新增 6 条幕后短片</span>
+      </div>
+    </div>
+  </div>
+  <header class="slm-header">
+    <div class="slm-wrap slm-header-inner">
+      <a class="slm-brand" href="#slm-top" aria-label="女大学生沙龙室官方网站首页">
+        <span class="slm-brand-mark" aria-hidden="true">沙龙</span>
+        <span class="slm-brand-text">
+          <b>女大学生沙龙室</b>
+          <small>官方影像门户 · SALON ROOM</small>
+        </span>
+      </a>
+      <nav class="slm-nav" aria-label="主导航">
+        <a href="#slm-focus">焦点内容</a>
+        <a href="#slm-special">专题企划</a>
+        <a href="#slm-authors">创作者</a>
+        <a href="#slm-insight">品牌解析</a>
+        <a href="#slm-reviews">用户口碑</a>
+        <a href="#slm-faq">帮助中心</a>
+      </nav>
+      <div class="slm-head-tools">
+        <div class="slm-search">
+          <input type="search" id="slmSearchInput" placeholder="搜沙龙室话题 / 作者" aria-label="站内搜索">
+          <button type="button" id="slmSearchBtn" aria-label="搜索">⌕</button>
+        </div>
+        <a class="slm-btn slm-btn-primary" href="#slm-cta">投稿报名</a>
+        <button class="slm-burger" id="slmBurger" aria-label="展开导航" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="slm-mobile-nav" id="slmMobileNav">
+      <a href="#slm-focus">焦点内容</a>
+      <a href="#slm-special">专题企划</a>
+      <a href="#slm-authors">创作者</a>
+      <a href="#slm-insight">品牌解析</a>
+      <a href="#slm-reviews">用户口碑</a>
+      <a href="#slm-faq">帮助中心</a>
+    </div>
+    <div class="slm-wrap"><p class="slm-search-hint" id="slmSearchHint"></p></div>
+  </header>
+</div>
+
+<main id="slm-top">
+
+  <!-- HERO -->
+  <section class="slm-hero" aria-label="品牌首屏">
+    <div class="slm-wrap slm-hero-grid">
+      <div class="slm-hero-text">
+        <span class="slm-hero-kicker">◆ 官方网站 · 企业品牌 · 原创正版</span>
+        <h1>女大学生沙龙室</h1>
+        <p class="slm-hero-sub">一间属于年轻创作者的影像客厅，也是一家持续运营的女性校园内容品牌。</p>
+        <p class="slm-hero-intro">
+          女大学生沙龙室官方网站是聚焦女大学生真实生活的原创视频平台，以“一间宿舍、几张椅子、一群有话说的人”为起点，深耕校园访谈、成长记录与在地文化影像。作为国内少见的以女性校园视角为核心的垂直内容品牌，平台为创作者提供高清正版发布环境，为企业与高校搭建值得信赖的青年内容生态，坚持用户至上与长期陪伴，用真实、温暖而有力的影像回应每一代大学生的提问。
+        </p>
+        <div class="slm-hero-stats">
+          <div class="slm-hero-stat"><b>1,286</b><span>原创视频作品</span></div>
+          <div class="slm-hero-stat"><b>92.6 万</b><span>社区创作者与观众</span></div>
+          <div class="slm-hero-stat"><b>10 季</b><span>持续运营 5 年</span></div>
+        </div>
+        <div class="slm-hero-actions">
+          <a class="slm-btn slm-btn-primary" href="#slm-focus">观看最新全集</a>
+          <a class="slm-btn slm-btn-ghost" href="#slm-special">浏览专题企划</a>
+          <button class="slm-btn slm-btn-ghost" type="button" data-slm-share="女大学生沙龙室官方网站 · 原创影像内容平台">分享给同好</button>
+        </div>
+      </div>
+      <div class="slm-hero-visual">
+        <div class="slm-hero-frame">
+          <svg viewBox="0 0 640 480" role="img" aria-label="女大学生沙龙室里几位创作者围坐在暖色灯光的长桌旁讨论">
+            <defs>
+              <linearGradient id="slmHeroBg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f7e6ef"/>
+                <stop offset="1" stop-color="#e7def6"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="480" fill="url(#slmHeroBg)"/>
+            <circle cx="118" cy="96" r="74" fill="#f0c8db" opacity=".7"/>
+            <circle cx="548" cy="120" r="58" fill="#cbbde8" opacity=".7"/>
+            <rect x="60" y="300" width="520" height="20" rx="10" fill="#b08a6a"/>
+            <rect x="86" y="320" width="16" height="120" fill="#a47f60"/>
+            <rect x="538" y="320" width="16" height="120" fill="#a47f60"/>
+            <g>
+              <circle cx="150" cy="228" r="34" fill="#e8a8c4"/>
+              <path d="M116 300 q34 -58 68 0 z" fill="#8a72b8"/>
+              <circle cx="150" cy="222" r="20" fill="#f6dbc8"/>
+            </g>
+            <g>
+              <circle cx="270" cy="214" r="34" fill="#b9a0e0"/>
+              <path d="M236 300 q34 -66 68 0 z" fill="#c2568e"/>
+              <circle cx="270" cy="208" r="20" fill="#f6dbc8"/>
+            </g>
+            <g>
+              <circle cx="392" cy="222" r="34" fill="#f0b7c9"/>
+              <path d="M358 300 q34 -58 68 0 z" fill="#6f8fc0"/>
+              <circle cx="392" cy="216" r="20" fill="#f6dbc8"/>
+            </g>
+            <g>
+              <circle cx="508" cy="232" r="32" fill="#a9c9d8"/>
+              <path d="M474 300 q34 -52 68 0 z" fill="#8a72b8"/>
+              <circle cx="508" cy="226" r="19" fill="#f6dbc8"/>
+            </g>
+            <rect x="180" y="268" width="60" height="32" rx="6" fill="#fff" opacity=".85"/>
+            <rect x="330" y="264" width="64" height="36" rx="6" fill="#fff" opacity=".85"/>
+            <rect x="470" y="272" width="52" height="28" rx="6" fill="#fff" opacity=".85"/>
+            <path d="M236 150 l16 30 h-32 z" fill="#c2568e" opacity=".55"/>
+            <circle cx="330" cy="120" r="26" fill="#fff" opacity=".5"/>
+            <text x="330" y="126" text-anchor="middle" font-size="13" fill="#8a72b8" font-family="sans-serif" font-weight="700">ON AIR</text>
+            <rect x="46" y="40" width="138" height="34" rx="17" fill="#c2568e"/>
+            <text x="115" y="62" text-anchor="middle" font-size="14" fill="#fff" font-family="sans-serif" font-weight="700">沙龙室 · 第十季</text>
+          </svg>
+        </div>
+        <div class="slm-hero-badge">
+          <span class="slm-live-dot" aria-hidden="true"></span>
+          <div><b>正在更新：第十季</b><small>每周五 20:00 官方发布</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOCUS -->
+  <section class="slm-section" id="slm-focus" data-tone="pink">
+    <div class="slm-wrap">
+      <div class="slm-section-head slm-reveal">
+        <div>
+          <span class="slm-eyebrow">FOCUS · 焦点内容</span>
+          <h2>女大学生沙龙室本周主推：全集播放与重点上新</h2>
+          <p>从整季全集到单期精选，官方发布的高清正版内容在这里集中呈现，每一条都配有创作者手记与讨论延伸。</p>
+        </div>
+        <a class="slm-link-more" href="#slm-special">查看全部专题 →</a>
+      </div>
+
+      <div class="slm-focus-grid">
+        <article class="slm-focus-card slm-reveal">
+          <svg viewBox="0 0 640 360" role="img" aria-label="期末前夜六人谈录制现场，暖光台灯下摆着咖啡与笔记本">
+            <defs>
+              <linearGradient id="slmFocus1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f6e3c8"/>
+                <stop offset="1" stop-color="#f3cfdd"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="360" fill="url(#slmFocus1)"/>
+            <circle cx="500" cy="80" r="42" fill="#fff" opacity=".55"/>
+            <rect x="0" y="252" width="640" height="108" fill="#c79b78"/>
+            <g fill="#8a72b8">
+              <circle cx="120" cy="200" r="30"/><rect x="88" y="236" width="64" height="60" rx="20"/>
+            </g>
+            <g fill="#c2568e">
+              <circle cx="252" cy="188" r="30"/><rect x="220" y="226" width="64" height="70" rx="20"/>
+            </g>
+            <g fill="#6f8fc0">
+              <circle cx="384" cy="196" r="30"/><rect x="352" y="234" width="64" height="62" rx="20"/>
+            </g>
+            <g fill="#e0918f">
+              <circle cx="504" cy="204" r="28"/><rect x="474" y="238" width="60" height="58" rx="20"/>
+            </g>
+            <rect x="150" y="286" width="44" height="30" rx="5" fill="#fff" opacity=".9"/>
+            <rect x="290" y="282" width="44" height="34" rx="5" fill="#fff" opacity=".9"/>
+            <rect x="430" y="288" width="44" height="28" rx="5" fill="#fff" opacity=".9"/>
+            <path d="M300 84 l14 26 h-28 z" fill="#c2568e" opacity=".6"/>
+            <rect x="34" y="28" width="150" height="32" rx="16" fill="#fff" opacity=".85"/>
+            <text x="109" y="49" text-anchor="middle" font-size="13" fill="#7a5288" font-family="sans-serif" font-weight="700">第十季 第8期 · 48:12</text>
+          </svg>
+          <div class="slm-focus-body">
+            <div class="slm-tagrow">
+              <span class="slm-tag pink">全集播放</span>
+              <span class="slm-tag">人物访谈</span>
+              <span class="slm-tag">校园生活</span>
+            </div>
+            <h3>期末前夜，六个人聊了聊「撑住」这件事</h3>
+            <p>沙龙室第十季第 8 期正片。六位来自不同专业的女生在熄灯前的两小时里，谈绩点焦虑、谈宿舍关系、谈退课后半段的自我复盘。镜头没有修饰，只有真实的停顿和笑声。</p>
+            <div class="slm-meta">
+              <span>作者 <b>阿棠</b></span><span>播放 <b>12.6 万</b></span><span>点赞 <b>8,412</b></span><span>收藏 <b>3,109</b></span>
+            </div>
+            <div class="slm-video-ops">
+              <button class="slm-mini-btn" type="button" data-slm-like>♡ 点赞</button>
+              <button class="slm-mini-btn" type="button" data-slm-save>☆ 收藏</button>
+              <button class="slm-mini-btn" type="button" data-slm-comment="期末前夜，六个人聊了聊「撑住」这件事">💬 评论</button>
+              <button class="slm-mini-btn" type="button" data-slm-share="女大学生沙龙室 · 期末前夜，六个人聊了聊「撑住」这件事">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="slm-video-list slm-reveal">
+          <article class="slm-video-item">
+            <div class="slm-video-item-top">
+              <span class="slm-video-index">01</span>
+              <div>
+                <h3>在图书馆待到闭馆的第四年</h3>
+                <p>一位准备考研的女生记录了她与自习室共存的一千多个夜晚，以及那些没说出口的坚持。</p>
+              </div>
+            </div>
+            <div class="slm-video-ops">
+              <span class="slm-tag">深度记录</span>
+              <button class="slm-mini-btn" type="button" data-slm-like>♡ 点赞</button>
+              <button class="slm-mini-btn" type="button" data-slm-save>☆ 收藏</button>
+            </div>
+          </article>
+          <article class="slm-video-item">
+            <div class="slm-video-item-top">
+              <span class="slm-video-index">02</span>
+              <div>
+                <h3>宿舍里的小型展览：六平米能装下多少热爱</h3>
+                <p>沙龙室走进三间宿舍，看女生们如何把床帘、书桌与墙面变成自己的私人策展空间。</p>
+              </div>
+            </div>
+            <div class="slm-video-ops">
+              <span class="slm-tag">生活方式</span>
+              <button class="slm-mini-btn" type="button" data-slm-like>♡ 点赞</button>
+              <button class="slm-mini-btn" type="button" data-slm-save>☆ 收藏</button>
+            </div>
+          </article>
+          <article class="slm-video-item">
+            <div class="slm-video-item-top">
+              <span class="slm-video-index">03</span>
+              <div>
+                <h3>第一次上台讲脱口秀的女大学生</h3>
+                <p>从宿舍排练到校园开放麦，镜头跟着她走完了整段准备过程，也拍下了忘词的那三秒。</p>
+              </div>
+            </div>
+            <div class="slm-video-ops">
+              <span class="slm-tag">创作幕后</span>
+              <button class="slm-mini-btn" type="button" data-slm-like>♡ 点赞</button>
+              <button class="slm-mini-btn" type="button" data-slm-save>☆ 收藏</button>
+            </div>
+          </article>
+          <article class="slm-video-item">
+            <div class="slm-video-item-top">
+              <span class="slm-video-index">04</span>
+              <div>
+                <h3>食堂阿姨的一天：从四点揉面开始</h3>
+                <p>校园生活不只有学生。这期我们把镜头对准后厨，记录一份早餐背后的十二个小时。</p>
+              </div>
+            </div>
+            <div class="slm-video-ops">
+              <span class="slm-tag">城市探索</span>
+              <button class="slm-mini-btn" type="button" data-slm-like>♡ 点赞</button>
+              <button class="slm-mini-btn" type="button" data-slm-save>☆ 收藏</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIAL -->
+  <section class="slm-section" id="slm-special" data-tone="lilac">
+    <div class="slm-wrap">
+      <div class="slm-section-head slm-reveal">
+        <div>
+          <span class="slm-eyebrow">SERIES · 专题企划</span>
+          <h2>围绕女大学生沙龙室展开的四个长期企划</h2>
+          <p>每个企划都由官方编辑部与社区创作者共同推进，保持稳定更新，也欢迎投稿与报名参与。</p>
+        </div>
+      </div>
+      <div class="slm-special">
+        <article class="slm-special-card slm-reveal">
+          <span class="slm-status">更新中 · 第 3 期</span>
+          <h3>《熄灯之后》女性夜谈企划</h3>
+          <p>在宿舍熄灯后的低照度环境里，用最松弛的语气聊最具体的问题，已上线三期，累计播放 41 万。</p>
+          <ul>
+            <li>第三期：和室友吵架之后，我们如何重修旧好</li>
+            <li>第二期：女生之间的嫉妒，是不是一种羞耻</li>
+            <li>第一期：第一份实习，我被安排去倒水</li>
+          </ul>
+        </article>
+        <article class="slm-special-card slm-reveal">
+          <span class="slm-status">征集中 · 报名开放</span>
+          <h3>《我的专业一句话说不清》科普企划</h3>
+          <p>面向全社区征集冷门专业的女生创作者，用三分钟讲清楚自己到底在学什么，入选作品由官方提供高清制作支持。</p>
+          <ul>
+            <li>已上线：文物保护技术专业的日常</li>
+            <li>已上线：茶学专业到底喝不喝茶</li>
+            <li>征集中：请你来讲自己的专业</li>
+          </ul>
+        </article>
+        <article class="slm-special-card slm-reveal">
+          <span class="slm-status">已完结 · 全集可播</span>
+          <h3>《毕业前必做的三十件小事》影像清单</h3>
+          <p>由沙龙室编辑部策划、三十位社区创作者接力拍摄，记录离校前最后一段时间的温柔收尾。</p>
+          <ul>
+            <li>第 01—10 件：把想吃的窗口都吃一遍</li>
+            <li>第 11—20 件：和老师说一句谢谢</li>
+            <li>第 21—30 件：在操场看一次日落</li>
+          </ul>
+        </article>
+        <article class="slm-special-card slm-reveal">
+          <span class="slm-status">长期运营 · 每月更新</span>
+          <h3>《校园创作者扶持企划》成长计划</h3>
+          <p>提供选题辅导、剪辑建议与正版素材支持，帮助有表达欲的女大学生把想法变成可发布的精品内容。</p>
+          <ul>
+            <li>扶持内容：脚本打磨与镜头语言训练</li>
+            <li>扶持内容：官方账号联合发布与推荐</li>
+            <li>扶持内容：年度创作者线下沙龙</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHORS -->
+  <section class="slm-section" id="slm-authors">
+    <div class="slm-wrap">
+      <div class="slm-section-head slm-reveal">
+        <div>
+          <span class="slm-eyebrow">CREATORS · 创作者矩阵</span>
+          <h2>支撑内容生态的六位常驻创作者</h2>
+          <p>她们来自不同专业、不同年级，共同构成了女大学生沙龙室多元而包容的表达底色。</p>
+        </div>
+      </div>
+      <div class="slm-author-grid">
+        <article class="slm-author-card slm-reveal">
+          <div class="slm-avatar" style="background:linear-gradient(135deg,#c2568e,#8a72b8);">棠</div>
+          <div class="slm-author-info">
+            <h3>阿棠 <small>常驻主持</small></h3>
+            <div class="slm-author-domain">擅长领域：人物访谈 · 夜谈企划</div>
+            <p>社会学大三学生，沙龙室最早的主持人之一。擅长把尴尬的沉默变成有价值的追问，访谈稿常被观众截图收藏。相信认真听别人说话本身就是一种创作。</p>
+            <div class="slm-author-stats"><span>作品 <b>214</b></span><span>粉丝 <b>18.6 万</b></span></div>
+            <button class="slm-author-more" type="button" data-slm-author="阿棠｜社会学大三，主持《熄灯之后》系列，累计访谈超过 60 位女大学生，擅长把日常对话剪成有层次的叙事。">查看作者资料 →</button>
+          </div>
+        </article>
+        <article class="slm-author-card slm-reveal">
+          <div class="slm-avatar" style="background:linear-gradient(135deg,#6f8fc0,#a9c9d8);">禾</div>
+          <div class="slm-author-info">
+            <h3>小于禾 <small>影像记录</small></h3>
+            <div class="slm-author-domain">擅长领域：城市探索 · 校园记录</div>
+            <p>广播电视编导专业，喜欢在清晨和傍晚出门拍东西。她的镜头很少摆拍，更多是长镜头里的等待。作品以校园空间与城市边缘生活为主，讲究光线与呼吸感。</p>
+            <div class="slm-author-stats"><span>作品 <b>176</b></span><span>粉丝 <b>12.3 万</b></span></div>
+            <button class="slm-author-more" type="button" data-slm-author="小于禾｜编导专业，专注校园与城市空间影像，作品以自然光与长镜头见长，是沙龙室外景内容的主要拍摄者。">查看作者资料 →</button>
+          </div>
+        </article>
+        <article class="slm-author-card slm-reveal">
+          <div class="slm-avatar" style="background:linear-gradient(135deg,#e0918f,#f0b7c9);">粥</div>
+          <div class="slm-author-info">
+            <h3>粥粥 <small>美食与生活</small></h3>
+            <div class="slm-author-domain">擅长领域：美食烹饪 · 宿舍生活</div>
+            <p>食品科学专业，把实验室的严谨带进了宿舍厨房。她拍的一人食视频节奏很慢，却总能让人看完。座右铭是：好好吃饭，是普通人最具体的自救方式。</p>
+            <div class="slm-author-stats"><span>作品 <b>148</b></span><span>粉丝 <b>9.8 万</b></span></div>
+            <button class="slm-author-more" type="button" data-slm-author="粥粥｜食品科学专业，用一口小锅在宿舍做饭四年，擅长把日常烹饪拍出治愈感，代表系列《六平米厨房》。">查看作者资料 →</button>
+          </div>
+        </article>
+        <article class="slm-author-card slm-reveal">
+          <div class="slm-avatar" style="background:linear-gradient(135deg,#8a72b8,#b9a0e0);">砚</div>
+          <div class="slm-author-info">
+            <h3>砚青 <small>深度访谈</small></h3>
+            <div class="slm-author-domain">擅长领域：文化访谈 · 情感故事</div>
+            <p>中文系大四，正在写一本关于女性友谊的毕业作品。她喜欢在访谈里留白，让受访者自己找到表达的节奏。文字功底扎实，脚本常被作为扶持企划的教学样本。</p>
+            <div class="slm-author-stats"><span>作品 <b>132</b></span><span>粉丝 <b>11.1 万</b></span></div>
+            <button class="slm-author-more" type="button" data-slm-author="砚青｜中文系大四，长期负责沙龙室的深度访谈与文稿撰写，关注女性友谊、成长与表达，倡导真实而有分寸的讲述。">查看作者资料 →</button>
+          </div>
+        </article>
+        <article class="slm-author-card slm-reveal">
+          <div class="slm-avatar" style="background:linear-gradient(135deg,#c2568e,#6f8fc0);">鹿</div>
+          <div class="slm-author-info">
+            <h3>小鹿不慌 <small>健康运动</small></h3>
+            <div class="slm-author-domain">擅长领域：健康运动 · 职场日常</div>
+            <p>体育教育专业，也是校队的常驻队医助理。她的视频总带着点调侃的劲儿，教人如何在期末周保住颈椎和情绪。主张运动不必自律，先开心再坚持。</p>
+            <div class="slm-author-stats"><span>作品 <b>119</b></span><span>粉丝 <b>8.4 万</b></span></div>
+            <button class="slm-author-more" type="button" data-slm-author="小鹿不慌｜体育教育专业，擅长把运动知识讲得轻松可用，系列《期末周保命指南》在社区长期热度靠前。">查看作者资料 →</button>
+          </div>
+        </article>
+        <article class="slm-author-card slm-reveal">
+          <div class="slm-avatar" style="background:linear-gradient(135deg,#a47f60,#c79b78);">白</div>
+          <div class="slm-author-info">
+            <h3>白露 <small>手作与美学</small></h3>
+            <div class="slm-author-domain">擅长领域：手作DIY · 艺术美学</div>
+            <p>视觉传达设计专业，喜欢把废弃材料变成可用的东西。她认为手工是一种低成本的自我照顾，视频里常有大量收声细节：剪刀、纸张、胶水与呼吸的声音。</p>
+            <div class="slm-author-stats"><span>作品 <b>97</b></span><span>粉丝 <b>7.2 万</b></span></div>
+            <button class="slm-author-more" type="button" data-slm-author="白露｜视觉传达设计专业，专注手作与材料实验内容，主张低成本创作，作品多次入选沙龙室年度精选。">查看作者资料 →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSIGHT -->
+  <section class="slm-section" id="slm-insight" data-tone="pink">
+    <div class="slm-wrap">
+      <div class="slm-section-head slm-reveal">
+        <div>
+          <span class="slm-eyebrow">INSIGHT · 品牌解析</span>
+          <h2>关于女大学生沙龙室的深度解析</h2>
+          <p>一间小小的影像客厅，如何长成一个持续运营的品牌与社区？以下从品牌定位、内容方法与社区共建三个角度展开。</p>
+        </div>
+      </div>
+      <div class="slm-prose slm-reveal">
+        <h3>一、品牌定位：从一间宿舍客厅到垂直内容品牌</h3>
+        <p>女大学生沙龙室最初的形态非常简单：几位同宿舍的女生在周末晚上把椅子围成一圈，用手机录下她们对某件小事的讨论。没有灯光，没有脚本，甚至没有固定的片头。但正是这种不加修饰的在场感，让第一支视频在社区里被反复转发。作为官方网站运营方，我们很快意识到，观众需要的不是完美的女性叙事，而是一个愿意让真实声音被听见的场域。于是，我们把这间客厅正式命名为「女大学生沙龙室」，并明确了品牌的垂直领域：以女大学生的真实生活为圆心，向外辐射校园文化、成长议题与城市生活观察。品牌不追逐热点话题的即时流量，而是坚持用长周期的方式记录一代年轻人的精神切片。这种定位让我们在同类内容平台中形成了辨识度，也让企业在与高校、公益机构合作时有了清晰的内容接口。</p>
+        <p>品牌故事的另一个关键节点，是我们对「全集」形态的坚持。很多内容平台倾向于拆条发布，用短平快的方式获取播放量，但沙龙室选择按季整理、以全集形式归档，让观众可以完整地看见一段对话的起承转合。这种处理方式牺牲了一部分即时数据，却换来了更高的完播率和更长久的用户口碑。到今天，十个季度的内容已经形成一条清晰可读的时间线，也成为品牌最值得信赖的资产之一。</p>
+        <h3>二、内容方法：真实记录与专业制作的平衡</h3>
+        <p>在具体的内容生产上，我们始终在「真实」与「专业」之间寻找平衡。真实意味着不美化、不替受访者总结、不为了情绪高点而硬剪冲突；专业意味着画面、声音、字幕、节奏都要达到可长期观看的品质标准。为此，沙龙室建立了三层内容机制：第一层是选题会，由编辑部和常驻创作者共同判定一个话题是否值得深入；第二层是拍摄与访谈规范，包括如何提问、如何保留沉默、如何保护受访者隐私；第三层是后期审校，所有涉及个人故事的内容在上线前都会经过当事人确认。这套机制让平台在快速运转的内容行业里保持了相对克制的节奏，也让参与者有安全感。</p>
+        <p>我们同样重视正版与高清的基础建设。所有上传内容都要经过清晰的素材授权确认，背景音乐、字体与影像片段均使用可商用资源，避免创作者因版权问题承担风险。对于社区投稿者，官方会提供规范的上传指引和必要的下载支持，帮助她们在第一次发布时就建立正确的版权意识。这些看起来偏「后台」的工作，其实是内容生态能否长期健康的基础，也是品牌社会责任的一部分。</p>
+        <div class="slm-pull">我们相信，真正有力量的影像不是让人羡慕别人的生活，而是让人更愿意回到自己的生活里去。</div>
+        <h3>三、社区共建：让创作者与观众成为共同作者</h3>
+        <p>沙龙室从未把自己定义为单向输出的媒体。社区里的评论、弹幕、投稿与投票，构成了内容的第二层生命。很多期节目的选题直接来自评论区的高赞留言；一些观众后来成为了常驻创作者，甚至有受访者在节目播出后主动投稿，讲述自己在镜头之外的变化。我们把这种关系称为「共同作者」，并在产品层面做了对应设计：评论可以被引用进下一期脚本，投稿经筛选后进入官方制作流程，年度评选由社区投票产生。女性创作者在这里获得的不只是曝光，还有方法、同伴与持续反馈。</p>
+        <p>为了让社区保持活力，我们设计了多层次的参与入口。轻度参与是点赞、收藏与评论；中度参与是话题投稿与创作灵感征集；深度参与则是扶持企划与线下沙龙。不同层级的入口让不同投入意愿的人都能找到位置，也让社区的增长不完全依赖算法推荐。企业动态、合作品牌与帮助中心等内容模块，同样承担着把新用户转化为长期用户的功能。我们始终认为，用户至上的意思不是迎合，而是认真对待每一个具体的反馈，并把它转化为可见的改进。</p>
+        <p>回顾五年运营，女大学生沙龙室的核心竞争力并不是某一支爆款视频，而是一套可以持续运转的内容生态：稳定的创作者队伍、清晰的制作标准、开放但有序的社区机制，以及一个始终如一的品牌承诺——用真实、温暖而有力的影像，陪伴每一代女大学生完成她们的表达。我们把这句承诺写进了官方网站的每一个板块，也会继续在未来的每一个季度兑现它。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="slm-section" id="slm-reviews">
+    <div class="slm-wrap">
+      <div class="slm-section-head slm-reveal">
+        <div>
+          <span class="slm-eyebrow">VOICES · 用户口碑</span>
+          <h2>观众与创作者怎么说</h2>
+          <p>来自社区的真实反馈，语气、长度与关注点各不相同，也是我们持续改进内容的依据。</p>
+        </div>
+      </div>
+      <div class="slm-review-grid">
+        <article class="slm-review slm-reveal">
+          <div class="slm-review-top">
+            <div class="slm-review-avatar" style="background:#c2568e;">林</div>
+            <div><b>林间有雾</b><span>大二 · 关注 1 年</span></div>
+          </div>
+          <p>《期末前夜》那期我看了三遍。她们说到的绩点焦虑和我几乎一模一样，但节目没有给标准答案，这种克制反而让我放松了。</p>
+          <div class="slm-stars">★★★★★</div>
+        </article>
+        <article class="slm-review slm-reveal">
+          <div class="slm-review-top">
+            <div class="slm-review-avatar" style="background:#8a72b8;">陈</div>
+            <div><b>陈小满</b><span>创作者 · 扶持企划第二期</span></div>
+          </div>
+          <p>投稿之后收到了很具体的修改建议，不是那种套话。编辑部帮我重剪了开头 40 秒，数据明显好了很多，这种帮助很实在。</p>
+          <div class="slm-stars">★★★★★</div>
+        </article>
+        <article class="slm-review slm-reveal">
+          <div class="slm-review-top">
+            <div class="slm-review-avatar" style="background:#6f8fc0;">周</div>
+            <div><b>周周不吃香菜</b><span>大三 · 关注 3 年</span></div>
+          </div>
+          <p>全集归档这点真的加分，我经常通勤路上从头补。就是希望搜索功能能再聪明一点，有时候只记得某句话找不到那期。</p>
+          <div class="slm-stars">★★★★☆</div>
+        </article>
+        <article class="slm-review slm-reveal">
+          <div class="slm-review-top">
+            <div class="slm-review-avatar" style="background:#e0918f;">许</div>
+            <div><b>许清和</b><span>毕业校友 · 关注 4 年</span></div>
+          </div>
+          <p>毕业两年了还在看。沙龙室最难得的是没有把大学生活浪漫化，它承认有很多狼狈和尴尬，但也不放弃温度。</p>
+          <div class="slm-stars">★★★★★</div>
+        </article>
+        <article class="slm-review slm-reveal">
+          <div class="slm-review-top">
+            <div class="slm-review-avatar" style="background:#a47f60;">苏</div>
+            <div><b>苏打水</b><span>大一 · 新用户</span></div>
+          </div>
+          <p>画质和声音真的比很多同类内容好，戴着耳机看很舒服。食堂阿姨那期我看哭了，希望多拍一些校园里被忽略的人。</p>
+          <div class="slm-stars">★★★★★</div>
+        </article>
+        <article class="slm-review slm-reveal">
+          <div class="slm-review-top">
+            <div class="slm-review-avatar" style="background:#8a72b8;">罗</div>
+            <div><b>罗一一</b><span>研一 · 关注 2 年</span></div>
+          </div>
+          <p>建议多一些实操类内容，比如怎么扛机器、怎么写提纲，现在创作者向的内容还是偏少，但整体方向我是认可的。</p>
+          <div class="slm-stars">★★★★☆</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS + PARTNERS + FAQ wrapper -->
+  <section class="slm-section" id="slm-news" data-tone="lilac">
+    <div class="slm-wrap">
+      <div class="slm-section-head slm-reveal">
+        <div>
+          <span class="slm-eyebrow">UPDATES · 企业动态与合作</span>
+          <h2>官方发布与持续运营的动态</h2>
+          <p>内容更新、扶持计划与合作伙伴的最新进展，公开透明地同步给社区。</p>
+        </div>
+      </div>
+      <div class="slm-focus-grid" style="align-items:start;">
+        <div class="slm-dyn slm-reveal">
+          <div class="slm-dyn-item">
+            <div class="slm-dyn-date">11 月 20 日</div>
+            <div class="slm-dyn-body">
+              <h3>第十季全集高清版完成归档</h3>
+              <p>本季共 10 期正片与 14 条幕后短片已全部上线，支持按季连续播放，画质统一为 1080P。</p>
+            </div>
+          </div>
+          <div class="slm-dyn-item">
+            <div class="slm-dyn-date">11 月 14 日</div>
+            <div class="slm-dyn-body">
+              <h3>校园创作者扶持企划第二期启动报名</h3>
+              <p>面向全国高校女大学生开放，入选者将获得选题辅导、设备支持与官方联合发布机会，11 月 30 日截止。</p>
+            </div>
+          </div>
+          <div class="slm-dyn-item">
+            <div class="slm-dyn-date">11 月 06 日</div>
+            <div class="slm-dyn-body">
+              <h3>与三所高校学生媒体中心达成内容合作</h3>
+              <p>合作将围绕在地文化与校园记录展开，预计每季度联合出品 6 条原创短片，共同维护正版素材规范。</p>
+            </div>
+          </div>
+          <div class="slm-dyn-item">
+            <div class="slm-dyn-date">10 月 28 日</div>
+            <div class="slm-dyn-body">
+              <h3>社区年度投票「最想重看的一期」结果公布</h3>
+              <p>《宿舍里的小型展览》以 18.4% 的得票率位列第一，编辑部将制作一期回访特辑。</p>
+            </div>
+          </div>
+        </div>
+        <div class="slm-reveal">
+          <div class="slm-partners">
+            <div class="slm-partner"><b>青穗高校影像联盟</b><span>内容合作</span></div>
+            <div class="slm-partner"><b>慢声耳机制造</b><span>设备支持</span></div>
+            <div class="slm-partner"><b>城市书房计划</b><span>场地合作</span></div>
+            <div class="slm-partner"><b>她创作基金会</b><span>公益伙伴</span></div>
+          </div>
+          <div style="margin-top:20px;background:#fff;border:1px solid var(--slm-line);border-radius:16px;padding:18px 20px;">
+            <h3 style="font-size:16px;margin-bottom:6px;">合作与投稿</h3>
+            <p style="font-size:13px;color:var(--slm-gray);">欢迎高校媒体、公益机构与品牌方联系内容共建；创作者可通过投稿入口上传作品，官方将在 7 个工作日内回复。</p>
+            <div class="slm-video-ops" style="margin-top:12px;">
+              <button class="slm-mini-btn" type="button" data-slm-submit>✎ 我要投稿</button>
+              <button class="slm-mini-btn" type="button" data-slm-share="女大学生沙龙室官方网站 · 合作与投稿通道">↗ 复制分享</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slm-section" id="slm-faq">
+    <div class="slm-wrap">
+      <div class="slm-section-head slm-reveal">
+        <div>
+          <span class="slm-eyebrow">HELP · 帮助中心</span>
+          <h2>关于女大学生沙龙室的常见问题</h2>
+          <p>观看、投稿、版权与合作的说明，帮助你更快地融入这个社区。</p>
+        </div>
+      </div>
+      <div class="slm-faq slm-reveal">
+        <details open>
+          <summary>「全集播放」在哪里可以找到完整列表？</summary>
+          <p>在首页焦点内容区点击「观看最新全集」，即可进入按季整理的播放列表。每季正片与幕后短片会分开展示，支持连续播放与进度记忆。</p>
+        </details>
+        <details>
+          <summary>我是女大学生，想成为创作者，需要什么条件？</summary>
+          <p>没有硬性粉丝门槛。只需提交一条 1—5 分钟的原创视频与简要选题说明，编辑部会评估内容是否与品牌方向一致。通过后可参与扶持企划，获得制作支持。</p>
+        </details>
+        <details>
+          <summary>平台对视频画质和素材版权有什么要求？</summary>
+          <p>建议上传 1080P 及以上、声音清晰的成片。所有音乐、字体与影像素材需确认可商用授权，官方也提供推荐素材清单，帮助创作者规避版权风险。</p>
+        </details>
+        <details>
+          <summary>节目中出现的受访者隐私如何保护？</summary>
+          <p>所有涉及个人故事的内容在上线前都会经过当事人确认，必要时可做化名、遮挡与音频处理。我们希望讲述是有力量的，也是有安全感的。</p>
+        </details>
+        <details>
+          <summary>如何参与社区投票和年度评选？</summary>
+          <p>注册社区账号后即可参与每季度的专题投票与年度内容评选，投票结果会直接影响后续企划的选题方向与制作优先级。</p>
+        </details>
+        <details>
+          <summary>品牌方或高校可以如何与平台合作？</summary>
+          <p>可通过合作与投稿入口提交合作意向，说明合作类型、周期与预期。我们优先考虑与青年成长、女性表达、在地文化相关的长期共建项目。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="slm-section" id="slm-cta">
+    <div class="slm-wrap">
+      <div class="slm-cta slm-reveal">
+        <div>
+          <h2>把你的故事，放进这间沙龙室</h2>
+          <p>女大学生沙龙室官方网站长期开放投稿与报名通道。无论是一条三分钟的日常记录，还是一个想认真聊清楚的话题，我们都愿意给你一张椅子。</p>
+        </div>
+        <div class="slm-hero-actions">
+          <button class="slm-btn slm-btn-primary" type="button" data-slm-submit>立即投稿报名</button>
+          <button class="slm-btn slm-btn-ghost" type="button" data-slm-share="女大学生沙龙室官方网站 · 投稿与报名">分享给同好</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="slm-footer">
+  <div class="slm-wrap">
+    <div class="slm-footer-grid">
+      <div>
+        <div class="slm-footer-brand">
+          <span class="slm-brand-mark" aria-hidden="true">沙龙</span>
+          <div><b style="color:#fff;font-size:15px;">女大学生沙龙室</b><br><span style="font-size:11.5px;color:#9a8fa6;letter-spacing:1px;">SALON ROOM OFFICIAL</span></div>
+        </div>
+        <p>女大学生沙龙室官方网站，是聚焦女大学生真实生活的原创视频品牌与内容社区。持续运营五年，深耕校园访谈、成长记录与在地文化影像，坚持正版高清与用户至上。</p>
+      </div>
+      <div>
+        <h3>内容板块</h3>
+        <ul>
+          <li><a href="#slm-focus">焦点内容</a></li>
+          <li><a href="#slm-special">专题企划</a></li>
+          <li><a href="#slm-authors">创作者矩阵</a></li>
+          <li><a href="#slm-insight">品牌解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>参与社区</h3>
+        <ul>
+          <li><a href="#slm-cta">我要投稿</a></li>
+          <li><a href="#slm-news">企业动态</a></li>
+          <li><a href="#slm-reviews">用户口碑</a></li>
+          <li><a href="#slm-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>官方说明</h3>
+        <ul>
+          <li>内容均为原创正版</li>
+          <li>支持 1080P 高清观看</li>
+          <li>投稿 7 个工作日内回复</li>
+          <li>合作请联系官方编辑部</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slm-footer-bottom">
+      <span>© 2026 女大学生沙龙室 官方网站 · 版权所有 · 持续运营中</span>
+      <span>品牌备案：沙龙室内容字第 2026-0118 号 · 互联网内容运营备案（模拟）</span>
+    </div>
+  </div>
+</footer>
+
+<button class="slm-totop" id="slmToTop" aria-label="回到顶部">↑</button>
+<div class="slm-toast" id="slmToast" role="status" aria-live="polite"></div>
+
+<div class="slm-modal" id="slmModal" role="dialog" aria-modal="true" aria-labelledby="slmModalTitle">
+  <div class="slm-modal-box">
+    <button class="slm-modal-close" id="slmModalClose" aria-label="关闭">×</button>
+    <h3 id="slmModalTitle">提示</h3>
+    <div id="slmModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('slmToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2400);
+  }
+
+  /* mobile nav */
+  var burger = document.getElementById('slmBurger');
+  var mobileNav = document.getElementById('slmMobileNav');
+  burger.addEventListener('click', function(){
+    var open = mobileNav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mobileNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      mobileNav.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* search */
+  var searchInput = document.getElementById('slmSearchInput');
+  var searchBtn = document.getElementById('slmSearchBtn');
+  var searchHint = document.getElementById('slmSearchHint');
+  var searchable = [
+    {text:'期末前夜 六人谈 访谈 第十季 全集播放', target:'#slm-focus'},
+    {text:'熄灯之后 夜谈 女性 宿舍 专题', target:'#slm-special'},
+    {text:'创作者 阿棠 小于禾 粥粥 砚青 作者', target:'#slm-authors'},
+    {text:'品牌解析 内容生态 深度 正版 高清', target:'#slm-insight'},
+    {text:'用户口碑 评价 观众 反馈', target:'#slm-reviews'},
+    {text:'企业动态 合作 投稿 报名', target:'#slm-news'},
+    {text:'帮助中心 常见问题 版权 隐私', target:'#slm-faq'}
+  ];
+  function runSearch(){
+    var q = searchInput.value.trim();
+    if(!q){ searchHint.textContent = '请输入关键词，例如「全集」「夜谈」「投稿」'; searchHint.classList.add('show'); return; }
+    var hit = searchable.filter(function(item){ return item.text.indexOf(q) !== -1; });
+    if(hit.length){
+      searchHint.textContent = '找到 ' + hit.length + ' 个相关板块：正在定位到「' + hit[0].text.split(' ')[0] + '」';
+      searchHint.classList.add('show');
+      var el = document.querySelector(hit[0].target);
+      if(el){ el.scrollIntoView({behavior:'smooth'}); }
+    } else {
+      searchHint.textContent = '未匹配到「' + q + '」，可试试「全集」「沙龙」「作者」等词';
+      searchHint.classList.add('show');
+    }
+  }
+  searchBtn.addEventListener('click', runSearch);
+  searchInput.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ runSearch(); } });
+
+  /* like & save */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-slm-like]');
+    if(likeBtn){
+      if(likeBtn.classList.contains('active')){
+        likeBtn.classList.remove('active');
+        likeBtn.textContent = '♡ 点赞';
+        showToast('已取消点赞');
+      } else {
+        likeBtn.classList.add('active');
+        likeBtn.textContent = '♥ 已点赞';
+        showToast('点赞成功，感谢支持原创内容');
+      }
+      return;
+    }
+    var saveBtn = e.target.closest('[data-slm-save]');
+    if(saveBtn){
+      if(saveBtn.classList.contains('saved')){
+        saveBtn.classList.remove('saved');
+        saveBtn.textContent = '☆ 收藏';
+        showToast('已取消收藏');
+      } else {
+        saveBtn.classList.add('saved');
+        saveBtn.textContent = '★ 已收藏';
+        showToast('已加入收藏，稍后继续观看');
+      }
+    }
+  });
+
+  /* modal helpers */
+  var modal = document.getElementById('slmModal');
+  var modalTitle = document.getElementById('slmModalTitle');
+  var modalBody = document.getElementById('slmModalBody');
+  function openModal(title, html){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add('open');
+  }
+  function closeModal(){ modal.classList.remove('open'); }
+  document.getElementById('slmModalClose').addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if(e.target === modal){ closeModal(); } });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeModal(); } });
+
+  /* comment */
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-slm-comment]');
+    if(!btn) return;
+    var title = btn.getAttribute('data-slm-comment');
+    openModal('参与评论', '<p>正在评论：<b>' + title + '</b></p>' +
+      '<div class="slm-field"><label for="slmCommentText">写下你的看法</label><textarea id="slmCommentText" placeholder="说说这期节目给你的感受……"></textarea></div>' +
+      '<div class="slm-modal-actions"><button class="slm-btn slm-btn-primary" type="button" id="slmCommentSend">发布评论</button><button class="slm-btn slm-btn-ghost" type="button" data-close-modal>取消</button></div>');
+    var send = document.getElementById('slmCommentSend');
+    if(send){
+      send.addEventListener('click', function(){
+        var val = document.getElementById('slmCommentText').value.trim();
+        if(!val){ showToast('评论内容不能为空'); return; }
+        closeModal();
+        showToast('评论已提交，审核通过后展示');
+      });
+    }
+  });
+
+  /* author */
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-slm-author]');
+    if(!btn) return;
+    openModal('创作者资料', '<p>' + btn.getAttribute('data-slm-author') + '</p>' +
+      '<div class="slm-modal-actions"><button class="slm-btn slm-btn-primary" type="button" data-close-modal>知道了</button><button class="slm-btn slm-btn-ghost" type="button" data-slm-share="女大学生沙龙室 · 创作者资料">分享这位创作者</button></div>');
+  });
+
+  /* submit */
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-slm-submit]');
+    if(!btn) return;
+    openModal('投稿报名', '<p>请填写基本信息，编辑部将在 7 个工作日内回复你。</p>' +
+      '<div class="slm-field"><label for="slmSubmitName">称呼</label><input id="slmSubmitName" type="text" placeholder="你希望我们怎么称呼你"></div>' +
+      '<div class="slm-field"><label for="slmSubmitTopic">选题或作品方向</label><input id="slmSubmitTopic" type="text" placeholder="例如：宿舍生活记录 / 专业科普"></div>' +
+      '<div class="slm-field"><label for="slmSubmitDesc">简单说明</label><textarea id="slmSubmitDesc" placeholder="一句话介绍你的想法或作品"></textarea></div>' +
+      '<div class="slm-modal-actions"><button class="slm-btn slm-btn-primary" type="button" id="slmSubmitSend">提交</button><button class="slm-btn slm-btn-ghost" type="button" data-close-modal>稍后再说</button></div>');
+    var send = document.getElementById('slmSubmitSend');
+    if(send){
+      send.addEventListener('click', function(){
+        var name = document.getElementById('slmSubmitName').value.trim();
+        var topic = document.getElementById('slmSubmitTopic').value.trim();
+        if(!name || !topic){ showToast('请填写称呼与选题方向'); return; }
+        closeModal();
+        showToast('投稿信息已提交，感谢你的信任');
+      });
+    }
+  });
+
+  /* share / copy link */
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-slm-share]');
+    if(!btn) return;
+    var text = btn.getAttribute('data-slm-share');
+    var done = function(){ showToast('内容已复制，可分享至微信 / 微博 / QQ'); };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(done).catch(function(){ showToast('分享内容：' + text); });
+    } else {
+      showToast('分享内容：' + text);
+    }
+  });
+
+  /* close modal buttons inside body */
+  document.addEventListener('click', function(e){
+    if(e.target.closest('[data-close-modal]')){ closeModal(); }
+  });
+
+  /* back to top */
+  var toTop = document.getElementById('slmToTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 460){ toTop.classList.add('show'); } else { toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+  /* reveal on scroll */
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, {threshold:0.08});
+    document.querySelectorAll('.slm-reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.slm-reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+
+})();
+</script>
+</body>
+  </html>
